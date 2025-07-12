@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #80cee1 0%, #80cee1 50%, #80cee1 100%);
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+#gifContainerImg,
+#happyGifContainer img,
+#happyGifContainer2 img,
+#happyGifContainer3 img,
+#happyGifContainer4 img,
+#sadGifContainer img,
+#sadGifContainer1 img,
+#sadGifContainer2 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#question {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin: 20px 0;
+    padding: 0 10px;
+    color: #FF6600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Pacifico', cursive;
+}
+
+#siBtn {
+    padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 40px);
+    font-size: clamp(16px, 4vw, 24px);
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #3BAE5D;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+#noBtn{
+    padding: clamp(10px, 3vw, 20px) clamp(20px, 5vw, 40px);
+    font-size: clamp(16px, 4vw, 24px);
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #D6453D;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#siBtn {
+    background-color: #3BAE5D;
+    color: white;
+}
+
+#noBtn {
+    background-color: #D6453D;
+    color: white;
+}
+
+#noBtn span {
+    background-color: #993dd6;
+    font-size: 18px;
+    color: white;
+}
+
+#siBtn:hover {
+    background-color: #053a03;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#noBtn:hover {
+    background-color: #641e0d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bg-green {
+    background-color: #ffffff;
+}
+
+#messageContainer {
+    font-size: clamp(20px, 5vw, 30px);
+    color: #FF6600;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.5s infinite alternate;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    #siBtn, #noBtn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 5px;
+    }
+    
+    #siBtn, #noBtn {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+/* Asegura que los botones estén alineados verticalmente */
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#siBtn, #noBtn {
+    vertical-align: middle;
+    /* Mantener altura mínima igual para ambos */
+    min-height: 48px;
+}
+
+/* Puedes ajustar el min-height según el diseño */
+

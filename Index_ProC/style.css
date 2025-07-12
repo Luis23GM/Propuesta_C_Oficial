@@ -542,3 +542,37 @@ main {
   }
 }
 /* --- Fin de ajuste especial --- */
+@media (max-width: 1220px), (max-width: 900px), (max-width: 650px), (max-width: 500px), (max-width: 1220px) and (min-aspect-ratio: 2/1), (max-width: 900px) and (min-aspect-ratio: 2/1), (max-width: 650px) and (min-aspect-ratio: 2/1), (max-width: 500px) and (min-aspect-ratio: 2/1) {
+  main {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    min-height: 100vh !important;
+    padding: 0 !important;
+  }
+  .content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .content h1 {
+    text-align: center !important;
+    margin: 0 auto 5vw auto !important;
+    padding: 0 !important;
+  }
+  .content p {
+    text-align: center !important;
+    margin: 0 auto 5vw auto !important;
+    padding: 6vw 4vw !important;
+    max-width: 95vw !important;
+  }
+}

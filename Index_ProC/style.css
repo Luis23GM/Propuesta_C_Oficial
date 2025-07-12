@@ -9,6 +9,13 @@
   font-family: "Quicksand", sans-serif;
 }
 
+body, main {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+}
+
 body {
   background: linear-gradient(135deg, #80cee1 0%, #80cee1 50%, #80cee1 100%);
   font-family: "Quicksand", sans-serif;
